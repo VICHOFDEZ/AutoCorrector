@@ -3,3 +3,5 @@ __pycache__/
 .env
 *.jpg
 *.png
+!btn_guardar_azul.png
+resultados/

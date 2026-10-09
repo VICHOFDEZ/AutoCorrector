@@ -1,5 +1,7 @@
 {
     "id_evaluacion": "Plantilla Universal Emarking WebC",
+    "pauta_pdf": "pautas/pauta_prueba.pdf",
+    "carpeta_resultados": "resultados",
     "zonas_pantalla": {
         "panel_izquierdo_resumen": {
             "top_left_x": 0,
@@ -28,5 +30,35 @@
     },
     "botones_estaticos": {
         "siguiente_alumno": {"x": 1829, "y": 123}
+    },
+    "ocr": {
+        "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+        "idioma": "eng",
+        "escala": 2
+    },
+    "ia": {
+        "url_ollama": "http://localhost:11434",
+        "modelo": "qwen2.5vl:7b",
+        "keep_alive": "20m",
+        "num_ctx": 16384,
+        "timeout_segundos": 300,
+        "reintentos": 2,
+        "ancho_max_imagen": 1024,
+        "alto_trozo_imagen": 1024,
+        "max_trozos": 6
+    },
+    "navegacion": {
+        "segundos_preparacion": 10,
+        "scroll_busqueda": 800,
+        "scroll_captura": 500,
+        "max_scrolls_busqueda": 20,
+        "max_capturas_respuesta": 12,
+        "espera_max_siguiente_alumno": 10
+    },
+    "rubrica": {
+        "zona": "panel_derecho_rubrica",
+        "desfase_clic_puntaje_y": -25,
+        "imagen_boton_guardar": "btn_guardar_azul.png",
+        "texto_boton_guardar": "guardar"
     }
 }
